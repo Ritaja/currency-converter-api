@@ -13,8 +13,8 @@ import java.util.Properties;
 
 public abstract class AbstractCurrencyConverter implements CurrencyConverter {
 
-    public static final String CACHE_NAME = "currencyConverter";
-    public static final String PROPERTIES_FILENAME = "currencyconverter.properties";
+    private static final String CACHE_NAME = "currencyConverter";
+    private static final String PROPERTIES_FILENAME = "currencyconverter.properties";
 
     private Properties properties;
     private Currency baseCurr;
