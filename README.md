@@ -11,7 +11,7 @@ Currency Converter is a Java library which provides API for currency conversion.
 
 
 Currency Converter is available as a maven artifact:
-```maven
+```xml
 <dependency>
   <groupId>com.tunyk.currencyconverter</groupId>
   <artifactId>currency-converter-api</artifactId>
