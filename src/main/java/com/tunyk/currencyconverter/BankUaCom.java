@@ -33,6 +33,7 @@ public class BankUaCom extends AbstractCurrencyConverter {
 
     private XPath xpath = XPathFactory.newInstance().newXPath();
 
+    @SuppressWarnings("unchecked")
     public BankUaCom(Currency fromCurrency, Currency toCurrency) throws CurrencyConverterException {
         super(Currency.UAH, fromCurrency, toCurrency);
         try {
@@ -63,6 +64,7 @@ public class BankUaCom extends AbstractCurrencyConverter {
         }
     }
 
+    @SuppressWarnings("unchecked")
     protected Float convertToBaseCurrency(Float moneyAmount, Currency fromCurrency) throws CurrencyConverterException {
         if (this.getBaseCurrency().equals(fromCurrency)) {
             return moneyAmount;
